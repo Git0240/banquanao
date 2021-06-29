@@ -1,0 +1,118 @@
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </button>
+  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavbarCategory">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>  -->
+                <!-- <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left"></i>
+                    <span>Toggle Sidebar</span>
+                </button> -->
+  <!-- Brand/logo -->
+  <a class="navbar-brand" [routerLink]="['/home']" routerLinkActive="router-link-active"><img style="height: 50px;" [src]="logopath"></a>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <!-- Narbar for Admin -->
+      <li class="nav-item" *ngIf="currentUser.Role == 'admin'">
+        <a class="nav-link" [routerLink]="['/view-product-list']">Danh sách sản phẩm</a>
+      </li>
+      <li class="nav-item" *ngIf="currentUser.Role == 'admin'">
+        <a class="nav-link" [routerLink]="['/showcategory']">Danh sách các danh mục</a>
+      </li>
+      <li class="nav-item" *ngIf="currentUser.Role == 'admin'">
+        <a class="nav-link" [routerLink]="">Danh sách hóa đơn</a>
+      </li>
+
+
+      <!-- Narbar for user -->
+      <li class="nav-item" *ngIf="currentUser.Role != 'admin'">
+        <a class="nav-link" [routerLink]="['/view-product-list-for-customer']" (click)="ResetSearchbar()">Danh sách sản phẩm</a>
+      </li>
+
+    </ul>
+ 
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2"  aria-label="Search" [(ngModel)]="keyword" [ngModelOptions]="{standalone: true}" >
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit" (click)="Find()" >Tìm kiếm</button>
+    </form>
+    </div>
+
+
+  <ul class="navbar-nav">
+    <li class="nav-item" *ngIf="!islogon">
+      <a class="nav-link" data-toggle="modal" data-target="#myModal"
+        style="background: none; border-style: none; border-radius: 0px; margin: auto;">
+        Đăng nhập
+      </a>
+    </li>
+
+
+    <li class="nav-item" *ngIf="!islogon">
+      <a class="nav-link " style="margin-right: 5px;" [routerLink]="['/register']">Đăng kí</a>
+    </li>
+
+    <li class="nav-item dropdown" *ngIf="islogon">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        {{currentUser.Email}}
+      </a>
+      <div class="dropdown-menu">
+
+        <a class="dropdown-item" *ngIf="currentUser.Role == 'user'" [routerLink]="['/edit-account']">Quản lý tài khoản</a>
+        <a class="dropdown-item" *ngIf="currentUser.Role == 'user'" [routerLink]="['/purchase-history']">Đơn hàng đã mua</a>
+        <a class="dropdown-item" (click)="logout()" [routerLink]="['/home']" routerLinkActive="router-link-active" >Đăng xuất</a>
+
+      </div>
+    </li>
+  </ul>
+  <!-- shopping-cart icon-->
+  <div class="nav-item">
+    <!--  -->
+    <a class="nav-link" [routerLink]="['/view-cart']" routerLinkActive="router-link-active">
+      <i class="fas fa-shopping-bag fa-lg" style="color: white"></i><span class="badge badge-dark"
+        *ngIf="UpdateCartQuantity()!=0">{{UpdateCartQuantity()}}</span>
+    </a>
+  </div>
+</nav>
+
+<!-- modal login  -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Đăng nhập</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <label>Email</label>
+        <input type="text" class="form-control" #email>
+        <label>Mật khẩu</label>
+        <input type="password" class="form-control" #password>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" (click)="login(email.value, password.value)"
+          data-dismiss="modal">Đăng nhập</button>
+        <button type="button" class="btn btn-dark" data-dismiss="modal">Đóng</button>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<div id="GoToTopIcon" *ngIf="showbutton" (click)="BackToTop()">
+<i class="fas fa-arrow-circle-up fa-2x" style="color: white;"></i>
+</div>
+
+
+<router-outlet></router-outlet>
+<app-message-modal></app-message-modal>
+

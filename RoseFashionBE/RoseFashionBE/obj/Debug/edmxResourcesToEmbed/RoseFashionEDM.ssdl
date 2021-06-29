@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RoseFashionDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="RoseFashionDBModelStoreContainer">
+    <EntitySet Name="Bills" EntityType="RoseFashionDBModel.Store.Bills" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Carts" EntityType="RoseFashionDBModel.Store.Carts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Cart_Product" EntityType="RoseFashionDBModel.Store.Cart_Product" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Categories" EntityType="RoseFashionDBModel.Store.Categories" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Discounts" EntityType="RoseFashionDBModel.Store.Discounts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Products" EntityType="RoseFashionDBModel.Store.Products" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Product_Size_Quantity" EntityType="RoseFashionDBModel.Store.Product_Size_Quantity" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Ratings" EntityType="RoseFashionDBModel.Store.Ratings" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="RoseFashionDBModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="RoseFashionDBModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Bill_Cart" Association="RoseFashionDBModel.Store.FK_Bill_Cart">
+      <End Role="Cart" EntitySet="Carts" />
+      <End Role="Bill" EntitySet="Bills" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bill_Discount" Association="RoseFashionDBModel.Store.FK_Bill_Discount">
+      <End Role="Discount" EntitySet="Discounts" />
+      <End Role="Bill" EntitySet="Bills" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cart_Product_Cart" Association="RoseFashionDBModel.Store.FK_Cart_Product_Cart">
+      <End Role="Cart" EntitySet="Carts" />
+      <End Role="Cart_Product" EntitySet="Cart_Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cart_User" Association="RoseFashionDBModel.Store.FK_Cart_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Cart" EntitySet="Carts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cart_Product_Product" Association="RoseFashionDBModel.Store.FK_Cart_Product_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Cart_Product" EntitySet="Cart_Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Category" Association="RoseFashionDBModel.Store.FK_Product_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Size_Quantity_Product" Association="RoseFashionDBModel.Store.FK_Product_Size_Quantity_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Product_Size_Quantity" EntitySet="Product_Size_Quantity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rating_Product" Association="RoseFashionDBModel.Store.FK_Rating_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Rating" EntitySet="Ratings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rating_User" Association="RoseFashionDBModel.Store.FK_Rating_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Rating" EntitySet="Ratings" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Bills">
+    <Key>
+      <PropertyRef Name="BillID" />
+    </Key>
+    <Property Name="BillID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CartID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ReceiverName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ReceiverPhone" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="DeliveryAddress" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="DiscountCode" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="TotalPrice" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Carts">
+    <Key>
+      <PropertyRef Name="CartID" />
+    </Key>
+    <Property Name="CartID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsUsing" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Cart_Product">
+    <Key>
+      <PropertyRef Name="CartID" />
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="CartID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ProductID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Amount" Type="int" Nullable="false" />
+    <Property Name="SalePrice" Type="bigint" Nullable="false" />
+    <Property Name="Size" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="OriginalPrice" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Categories">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MainCategory" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Discounts">
+    <Key>
+      <PropertyRef Name="DiscountCode" />
+    </Key>
+    <Property Name="DiscountCode" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="EndDate" Type="datetime" Nullable="false" />
+    <Property Name="Value" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Color" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="CategoryID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Image" Type="varchar(max)" Nullable="true" />
+    <Property Name="Price" Type="bigint" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DiscountPercent" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Product_Size_Quantity">
+    <Key>
+      <PropertyRef Name="ProductID" />
+      <PropertyRef Name="Size" />
+    </Key>
+    <Property Name="ProductID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Size" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ratings">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ProductID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Comment" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" Nullable="true" />
+    <Property Name="definition" Type="varbinary(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="varchar(max)" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Gender" Type="varchar" Nullable="true" MaxLength="5" />
+    <Property Name="DOB" Type="datetime" Nullable="true" />
+    <Property Name="Email" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Phone" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="Role" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Bill_Cart">
+    <End Role="Cart" Type="RoseFashionDBModel.Store.Carts" Multiplicity="1" />
+    <End Role="Bill" Type="RoseFashionDBModel.Store.Bills" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cart">
+        <PropertyRef Name="CartID" />
+      </Principal>
+      <Dependent Role="Bill">
+        <PropertyRef Name="CartID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bill_Discount">
+    <End Role="Discount" Type="RoseFashionDBModel.Store.Discounts" Multiplicity="0..1" />
+    <End Role="Bill" Type="RoseFashionDBModel.Store.Bills" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Discount">
+        <PropertyRef Name="DiscountCode" />
+      </Principal>
+      <Dependent Role="Bill">
+        <PropertyRef Name="DiscountCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cart_Product_Cart">
+    <End Role="Cart" Type="RoseFashionDBModel.Store.Carts" Multiplicity="1" />
+    <End Role="Cart_Product" Type="RoseFashionDBModel.Store.Cart_Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cart">
+        <PropertyRef Name="CartID" />
+      </Principal>
+      <Dependent Role="Cart_Product">
+        <PropertyRef Name="CartID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cart_User">
+    <End Role="User" Type="RoseFashionDBModel.Store.Users" Multiplicity="1" />
+    <End Role="Cart" Type="RoseFashionDBModel.Store.Carts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Cart">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cart_Product_Product">
+    <End Role="Product" Type="RoseFashionDBModel.Store.Products" Multiplicity="1" />
+    <End Role="Cart_Product" Type="RoseFashionDBModel.Store.Cart_Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="Cart_Product">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Category">
+    <End Role="Category" Type="RoseFashionDBModel.Store.Categories" Multiplicity="1" />
+    <End Role="Product" Type="RoseFashionDBModel.Store.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Size_Quantity_Product">
+    <End Role="Product" Type="RoseFashionDBModel.Store.Products" Multiplicity="1" />
+    <End Role="Product_Size_Quantity" Type="RoseFashionDBModel.Store.Product_Size_Quantity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="Product_Size_Quantity">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rating_Product">
+    <End Role="Product" Type="RoseFashionDBModel.Store.Products" Multiplicity="1" />
+    <End Role="Rating" Type="RoseFashionDBModel.Store.Ratings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="Rating">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rating_User">
+    <End Role="User" Type="RoseFashionDBModel.Store.Users" Multiplicity="1" />
+    <End Role="Rating" Type="RoseFashionDBModel.Store.Ratings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Rating">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

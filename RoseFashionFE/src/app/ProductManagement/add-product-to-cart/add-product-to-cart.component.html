@@ -1,0 +1,90 @@
+<!-- <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
+    <div class="row">
+        <div class="col">
+            <img [src]="product.Image" class="img-fluid" style="width: 450px; height: 600px;">
+        </div>
+        <div class="col">
+            <h1>{{product.Name}}</h1>
+            <P>Kích thước</P> -->
+<!--<div class="sizes" *ngFor="let size of product.Size; let i = index" style="display: inline; margin-right: 10px;">
+                <button for="selectedsize" *ngIf="product.Quantity[i]>0;else soldout">{{size}}</button>
+                <ng-template #soldout>
+                    <button disabled>{{size}}</button>
+                </ng-template>
+            </div>-->
+<!-- <div class="row">
+            <div class="col">
+                <div class="row">
+            <div class="col" *ngFor="let size of product.Size; let i = index">
+                <div *ngIf="product.Quantity[i]!=0;">
+                    <input type="radio" name="sizeoption" value="size" (change)="OnSizeChange(size, i)">{{size}}
+                </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <p>Số lượng</p>
+            <input class="form-control" type="number" min="1" max="{{maxamount}}" #amount value="1">
+            <p></p>
+            <p>Giá</p>
+            <h1>{{product.Price | number}} VNĐ</h1> -->
+<!--<input type="number" [(ngModel)]="product.Price" class="form-control" style="width: 310px;" disabled>-->
+<!-- <p></p>
+            <button class="btn btn-dark" (click)="AddToCart(amount.value)">Thêm vào giỏ</button>
+        </div>
+    </div>
+</div> -->
+
+<div class="table-responsive">
+    <table class="table table-borderless" style="width: 99%;">
+        <tr class="row">
+            <td class="col">
+                <div class="d-flex justify-content-center">
+                    <img [src]="product.Image" class="img-fluid" style="max-width: 450px; max-height: 600px;">
+                </div>
+            </td>
+            <td class="col">
+                <div style="margin-left: 20px;">
+                    <h1>{{product.Name}}</h1>
+
+                    <table style="margin-left: -10px;">
+                        <tr>
+                            <td colspan="5">Kích thước
+                            </td>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td *ngFor="let size of product.Size; let i = index">
+                                    <div *ngIf="product.Quantity[i]!=0; else soldout">
+                                        <input type="radio" name="sizeoption" id={{size}} value="size"
+                                            (change)="OnSizeChange(size, i)" hidden>
+                                        <label class="custom-radio" for="{{size}}">{{size}}</label>
+                                    </div>
+                                    <ng-template #soldout>
+                                        <input type="radio" id={{size}} name="sizeoption" value="size"
+                                            (change)="OnSizeChange(size, i)" disabled hidden>
+                                        <label class="disabled-label" for="{{size}}">{{size}}</label>
+                                    </ng-template>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <div class="alert alert-danger" *ngIf="warning">Hãy chọn kích thước</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Số lượng</p>
+                    <input class="form-control" style="max-width: 100px;" type="number" min="1" max="{{maxamount}}"
+                        #amount [(ngModel)]="inputamount" (change)="OnAmountChange()" value="1">
+                    <p></p>
+                    <p>Giá</p>
+                    <h3 *ngIf="product.DiscountPercent!=0" style="text-decoration: line-through;">{{product.Price | number}} VNĐ</h3>
+                    <h1>{{product.Price - product.Price*product.DiscountPercent/100 | number}} VNĐ</h1>
+                    <p></p>
+                    <button class="btn btn-dark" (click)="AddToCart(amount.value)">Thêm vào giỏ</button>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

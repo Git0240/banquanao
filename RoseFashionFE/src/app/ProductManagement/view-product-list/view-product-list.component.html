@@ -1,0 +1,40 @@
+<div class="container" style="width:device-width;">
+    <h1 class="d-flex justify-content-center">Danh sách sản phẩm</h1>
+    <button class="btn btn-dark" [routerLink]="['/add-product']" routerLinkActive="router-link-active">Thêm sản
+        phẩm</button>
+    <p></p>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Mã sản phẩm</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Giá (VNĐ)</th>
+                    <th>Tùy chọn</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let item of productlist | paginate: pageconfig">
+                <tr>
+                    <td>{{item.ProductID}}</td>
+                    <td>{{item.Name}}</td>
+                    <td>{{item.Price | number}}</td>
+                    <!-- <td><button class="btn btn-dark" style="margin-left: 5px"
+                            [routerLink]="['/update-product', item.ProductID]"
+                            routerLinkActive="router-link-active">Sửa</button>
+                        <button class="btn btn-dark" style="margin-left: 5px;"
+                            (click)="DeleteProduct(item.ProductID)">Xóa</button> -->
+                    <td>
+                        <i class="fas fa-edit" style="margin-left: 5px;"
+                            [routerLink]="['/update-product', item.ProductID]" routerLinkActive="router-link-active"
+                            title="Edit"></i>
+                        <i class="fas fa-trash" style="margin-left: 5px;" (click)="DeleteProduct(item.ProductID)"
+                            title="Delete"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="d-flex justify-content-center">
+        <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+<h2 class="d-flex justify-content-center">Thanh toán giỏ hàng</h2>
+<div class="container" style="margin-bottom: 20px;">
+    <div class="row">
+        <div class="col-sm-4" style="border-right: 1px solid black;">
+            <h4>Thông tin hóa đơn</h4>
+            <div class="alert alert-danger" *ngIf="warning">Xin hãy điền đầy đủ thông tin.</div>
+            <p>Họ và tên</p>
+            <input #receivername class="form-control" type="text" value="{{user.FullName}}">
+            <!-- <p>Email</p>
+            <input #email class="form-control" type="text" value="{{user.Email}}"> -->
+            <div style="display: none;"><input #discount type="text"></div>
+            <p>SDT</p>
+            <input #phone class="form-control" type="text" value="{{user.Phone}}">
+            <p>Địa chỉ giao hàng</p>
+            <textarea #address class="form-control">{{user.Address}}</textarea>
+        </div>
+        <div class="col-sm-8">
+            <h4>Thông tin giỏ hàng</h4>
+            <div class="row">
+                <div class="col"><p>Tên sản phẩm</p></div>
+                <div class="col"><p>Size</p></div>
+                <div class="col"><p>Số lượng</p></div>
+                <div class="col"><p>Giá</p></div>
+            </div>
+            <div class="row" *ngFor="let item of mycart" style="border-bottom: 1px solid black;">
+                <div class="col"><p>{{item.Name}}</p></div>
+                <div class="col"><p>{{item.Size}}</p></div>
+                <div class="col"><p>{{item.Amount}}</p></div>
+                <div class="col"><p>{{item.SalePrice | number}} VNĐ</p>
+                    <div *ngIf="CheckDiscount(item.OriginalPrice, item.SalePrice)" style="text-decoration: line-through; color: red;">
+                        <p>{{item.OriginalPrice | number}} VNĐ</p></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col font-weight-bold">
+                    <p>Tổng cộng:</p>
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col font-weight-bold">
+                    <p>{{totalprice | number}} VNĐ</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-end">
+                        <button class="btn btn-dark" style="margin-right: 10px;" [routerLink]="['/view-product-list-for-customer']" routerLinkActive="router-link-active" >Tiếp tục mua hàng</button>
+                        <button class="btn btn-dark" (click)="AddBill(receivername.value, phone.value, address.value, discount.value)">Xác nhận thanh toán</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

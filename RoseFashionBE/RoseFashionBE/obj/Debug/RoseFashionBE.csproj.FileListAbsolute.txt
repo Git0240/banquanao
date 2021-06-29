@@ -1,0 +1,165 @@
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\ApplicationInsights.config
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\csc.exe
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\System.Collections.Immutable.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\System.Reflection.Metadata.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\vbc.exe
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\VBCSCompiler.exe
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\VBCSCompiler.exe.config
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\RoseFashionBE.dll.config
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\RoseFashionBE.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\RoseFashionBE.pdb
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\EntityFramework.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\EntityFramework.SqlServer.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.Agent.Intercept.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.DependencyCollector.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.Web.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.WindowsServer.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.ApplicationInsights.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Newtonsoft.Json.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\System.Net.Http.Formatting.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\System.Web.Http.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\System.Web.Http.WebHost.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\EntityFramework.xml
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\EntityFramework.SqlServer.xml
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.DependencyCollector.xml
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.Web.xml
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.WindowsServer.xml
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.ApplicationInsights.xml
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Newtonsoft.Json.xml
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\System.Net.Http.Formatting.xml
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\System.Web.Http.xml
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\System.Web.Http.WebHost.xml
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\obj\Debug\RoseFashionBE.csprojResolveAssemblyReference.cache
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\obj\Debug\RoseFashionBE.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\obj\Debug\RoseFashionBE.pdb
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\System.Web.Cors.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\System.Web.Http.Cors.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\System.Web.Http.Cors.xml
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\ApplicationInsights.config
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\csc.exe
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\System.Collections.Immutable.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\System.Reflection.Metadata.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\vbc.exe
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\VBCSCompiler.exe
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\roslyn\VBCSCompiler.exe.config
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\RoseFashionBE.dll.config
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\RoseFashionBE.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\RoseFashionBE.pdb
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\EntityFramework.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\EntityFramework.SqlServer.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.Agent.Intercept.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.DependencyCollector.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.Web.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.WindowsServer.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.ApplicationInsights.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Newtonsoft.Json.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\System.Net.Http.Formatting.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\System.Web.Cors.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\System.Web.Http.Cors.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\System.Web.Http.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\System.Web.Http.WebHost.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\EntityFramework.xml
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\EntityFramework.SqlServer.xml
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.DependencyCollector.xml
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.Web.xml
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.WindowsServer.xml
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.ApplicationInsights.xml
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\System.Net.Http.Formatting.xml
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\System.Web.Http.xml
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\System.Web.Http.Cors.xml
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Newtonsoft.Json.xml
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\System.Web.Http.WebHost.xml
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\obj\Debug\RoseFashionBE.csprojAssemblyReference.cache
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\obj\Debug\RoseFashionBE.csproj.CopyComplete
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\obj\Debug\RoseFashionBE.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\obj\Debug\RoseFashionBE.pdb
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.IdentityModel.Logging.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.IdentityModel.Tokens.dll
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.IdentityModel.Logging.xml
+D:\github\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.IdentityModel.Tokens.xml
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.IdentityModel.Logging.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.IdentityModel.Tokens.dll
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.IdentityModel.Logging.xml
+F:\TLCN\RoseFashionSite\RoseFashionBE\RoseFashionBE\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\ApplicationInsights.config
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\roslyn\csc.exe
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\roslyn\vbc.exe
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\roslyn\VBCSCompiler.exe
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\RoseFashionBE.dll.config
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\RoseFashionBE.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\RoseFashionBE.pdb
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\EntityFramework.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\EntityFramework.SqlServer.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.Web.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\Newtonsoft.Json.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\System.Net.Http.Formatting.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\System.Web.Cors.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\System.Web.Http.Cors.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\System.Web.Http.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\System.Web.Http.WebHost.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\EntityFramework.xml
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\EntityFramework.SqlServer.xml
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.Web.xml
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\Newtonsoft.Json.xml
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\System.Net.Http.Formatting.xml
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\System.Web.Http.xml
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\System.Web.Http.Cors.xml
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\bin\System.Web.Http.WebHost.xml
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\obj\Debug\RoseFashionBE.csproj.CoreCompileInputs.cache
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\obj\Debug\RoseFashionBE.csproj.CopyComplete
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\obj\Debug\RoseFashionBE.dll
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\obj\Debug\RoseFashionBE.pdb
+C:\Users\Giang\Dropbox\My PC (DESKTOP-8334UUG)\Downloads\banquanao\banquanao\RoseFashionBE\RoseFashionBE\obj\Debug\RoseFashionBE.csprojAssemblyReference.cache

@@ -1,0 +1,48 @@
+
+
+<div class="container" style="max-width: 550px;width: device-width;">
+
+    <div *ngIf="showMessage" class="alert alert-success">
+    {{showMessage}}
+    </div>
+    <div>
+        <h2 style="text-align: center;">Thêm loại sản phẩm</h2>
+    </div>
+  <form [formGroup]="classForm" #formDir="ngForm">
+    <div [hidden]="!!classForm.submitted">
+    <div class="cross-validation" [class.cross-validation-error]="!!classForm.errors?.identityRevealed
+    && (classForm.touched || classForm.dirty)">
+      <div >
+      <label>Tên loại</label>
+      <input #classname type="text" class="form-control" placeholder="Class Name" formControlName="name" required>
+      <div *ngIf="name.invalid && (name.dirty || name.touched)"
+              class="alert alert-danger">
+            <div *ngIf="!!name.errors.required">
+              Name is required.
+            </div>
+          </div>
+      </div>
+  
+      <div >
+        <label>Loại chính</label>
+        <input #classname type="text" class="form-control" placeholder="Class Name" formControlName="maincategory" required>
+        <div *ngIf="maincategory.invalid && (maincategory.dirty || maincategory.touched)"
+                class="alert alert-danger">
+              <div *ngIf="!!maincategory.errors.required">
+                Maincategory is required.
+              </div>
+            </div>
+        </div>
+
+      <div>
+        <br/>
+        <button class="btn btn-dark float-right" (click)="addCategory(name.value , maincategory.value)" title="Add" type="submit" [disabled]="classForm.invalid">Save </button>
+        <button type="button" class="btn btn-dark float-right" style="margin-right: 5px;"
+            [routerLink]="['/']" routerLinkActive="active">Back</button>
+      </div>
+    </div>
+  </div>
+  </form>
+  </div>
+  
+  

@@ -1,0 +1,65 @@
+<h2>Giỏ hàng của bạn</h2>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="row" *ngFor="let item of mycart | paginate: pageconfig" style="margin-bottom: 10px;">
+                <div class="col-sm-2">
+                    <img class="img-fluid" [src]="item.Image">
+                </div>
+                <div class="col-sm-2">
+                    <a [routerLink]="['/add-product-to-cart', item.ProductID]" style="color: black;">
+                        {{item.Name}}
+                    </a>
+                </div>
+                <div class="col-sm-2">Size: {{item.Size}}</div>
+                <div class="col-sm-2"><input type="number" [(ngModel)]="item.Amount" class="form-control"
+                        (change)="UpdateItemAmount(item.ProductID, item.Amount)" min="1" max="{{item.Quantity}}"></div>
+                <div class="col-sm-2">
+                    <p>{{item.SalePrice | number}} VNĐ</p>
+                    <p *ngIf="CheckDiscount(item.OriginalPrice, item.SalePrice)" style="text-decoration: line-through;">
+                        {{item.OriginalPrice | number}} VNĐ</p>
+                </div>
+                <div class="col-sm-2"><Button class="btn btn-dark" data-toggle="modal" data-target="#myModal1"
+                        (click)="SelectItem(item.ProductID)">Xóa</Button></div>
+            </div>
+            <div class="d-flex justify-content-center" *ngIf="totalprice!=0">
+                <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div style="background-color: #f2f2f2;">
+                <p>Tổng cộng: {{totalprice | number}} VNĐ</p>
+                <button *ngIf="totalprice!=0" class="btn btn-dark" [routerLink]="['/add-bill']"
+                    routerLinkActive="router-link-active">Thanh
+                    toán</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Cảnh báo!</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                Quý khách có chắc chắn muốn xóa sản phẩm này không?
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal" (click)="RemoveItem()">Có</button>
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Không</button>
+            </div>
+
+        </div>
+    </div>
+</div>

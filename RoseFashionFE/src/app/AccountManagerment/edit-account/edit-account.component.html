@@ -1,0 +1,45 @@
+<div class="container" style="max-width: 350px; width:device-width;">
+  <form>
+    <div class="form-group">
+      <h2 style="text-align: center;">Thông tin tài khoản</h2>
+    </div>
+
+    <div class="form-group">
+      <label>Email</label>
+      <input class="form-control" [(ngModel)]="user.Email" [ngModelOptions]="{standalone: true}" disabled>
+    </div>
+
+
+    <div class="form-group">
+      <label>Họ và tên</label>
+      <input class="form-control" [(ngModel)]="user.FullName" [ngModelOptions]="{standalone: true}">
+      <!-- <div class="alert alert-danger" *ngIf="user.FullName == '' ">
+      <div>
+        It's required.
+      </div>
+    </div> -->
+    </div>
+
+    <div class="form-group">
+      <label>Địa chỉ</label>
+      <input class="form-control" [(ngModel)]="user.Address" [ngModelOptions]="{standalone: true}">
+    </div>
+
+    <div class="form-group">
+      <label>Số điện thoại</label>
+      <input class="form-control" [(ngModel)]="user.Phone" [ngModelOptions]="{standalone: true}" (change)="CheckingPhoneNumber()">
+    </div>
+    <div class="alert alert-danger" *ngIf="!validphone">
+      <div>
+        Số điện thoại không hợp lệ.
+      </div>
+    </div> 
+
+
+    <div class="d-flex justify-content-end" style="margin-bottom: 10px;">
+      <button class="btn btn-dark" (click)="save()">Save</button>
+      <button class="btn btn-dark" (click)="goBack()" style="margin-left: 10px;">Back</button>
+    </div>
+    
+  </form>
+</div>

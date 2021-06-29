@@ -1,0 +1,125 @@
+<!-- <h2 class="d-flex justify-content-center">Thêm sản phẩm</h2>
+<div class="table-responsive">
+    <table class="table table-borderless" style="width: 99%;">
+        <tr class="row">
+            <td class="col">
+                <div style="margin-left: 20px;">
+                    <p>Hình ảnh</p>
+                </div>
+                <input type="file" (change)="onSelectFile($event)" id="file" style="visibility: hidden;">
+                <div><label for="file" class="btn btn-dark" style="margin-left: 20px; margin-top: -40px;"> Chọn ảnh</label></div>
+                <div class="d-flex justify-content-center">
+                    <img [src]="product.Image" class="img-fluid" style="max-width: 450px; max-height: 600px;" *ngIf="product.Image!=''">
+                </div>
+            </td>
+            <td class="col">
+                <div style="margin-left: 20px;">
+                    <p>Tên sản phẩm</p>
+                    <input type="text" [(ngModel)]="product.Name" class="form-control" style="width: 310px;">
+                    <p></p>
+
+                    <table style="margin-left: -10px;">
+                        <tr>
+                            <td>Kích thước</td>
+                            <td>Số lượng</td>
+                        </tr>
+                        <tbody *ngFor="let opt of product.Size; let i = index">
+                            <tr>
+                                <td>{{opt}}</td>
+                                <td><input type="number" [(ngModel)]="product.Quantity[i]" class="form-control" (change)="OnQuantityChange(i)"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Danh mục chính</p>
+                    <div class="alert alert-danger" style="width: 50%;" *ngIf="categoryrequire">Hãy chọn kích thước</div>
+                    <select [(ngModel)]="maincategory" style="width: 310px;">
+                        <option value="">Hãy chọn 1 loại</option>
+                        <ng-container *ngFor="let category of categorylist">
+                            <option *ngIf="category.MainCategory==null" value="{{category.CategoryID}}">
+                                {{category.Name}}
+                            </option>
+                        </ng-container>
+                    </select>
+                    <p></p>
+                    <p>Danh mục phụ</p>
+                    <select name="category" [(ngModel)]="subcategory" style="width: 310px;">
+                        <option value="">Hãy chọn 1 loại</option>
+                        <ng-container *ngFor="let category of categorylist">
+                            <option *ngIf="category.MainCategory==selectedmaincategory" value="{{category.CategoryID}}">
+                                {{category.Name}}</option>
+                        </ng-container>
+                    </select>
+                    <p></p>
+                    <p>Giá: {{product.Price | number}} VNĐ</p>
+                    <input type="number" [(ngModel)]="product.Price" class="form-control" style="width: 310px;" value="0" min="0">
+                    <p></p>
+                    <button class="btn btn-dark" (click)="AddProduct()">Lưu</button>
+                    <button class="btn btn-dark" (click)="Cancel()" style="margin-left: 10px;">Hủy</button>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div> -->
+
+<h2 class="d-flex justify-content-center">Thêm sản phẩm</h2>
+<div class="container" style="margin-bottom: 20px;">
+    <div class="row">
+        <div class="col">
+            <p>Hình ảnh</p>
+            <label for="file" class="btn btn-dark"> Chọn ảnh</label>
+            <input type="file" (change)="onSelectFile($event)" id="file" style="visibility: hidden;">
+            <div class="d-flex justify-content-center">
+                <img [src]="product.Image" class="img-fluid" style="max-width: 450px; max-height: 600px;"
+                    *ngIf="product.Image!=''">
+            </div>
+        </div>
+        <div class="col">
+            <p>Tên sản phẩm</p>
+            <input type="text" [(ngModel)]="product.Name" class="form-control">
+            <div class="alert alert-danger" *ngIf="namerequire">Hãy nhập tên sản phẩm</div>
+            <p></p>
+
+            <div class="row" style="margin-bottom: 10px;">
+                <div class="col">Kích thước</div>
+                <div class="col">Số lượng</div>
+            </div>
+            <div class="row" style="margin-bottom: 10px;" *ngFor="let opt of product.Size; let i = index">
+                <div class="col"><div class="align-middle">{{opt}}</div></div>
+                <div class="col"><input type="number" #quantity [(ngModel)]="product.Quantity[i]" class="form-control"
+                        (change)="OnQuantityChange(i)" (click)="quantity.select()">
+                </div>
+            </div>
+
+            <p></p>
+            <p>Danh mục chính</p>
+            <select class="form-control" [(ngModel)]="maincategory">
+                <ng-container *ngFor="let category of categorylist">
+                    <option *ngIf="category.MainCategory==null" value="{{category.CategoryID}}">
+                        {{category.Name}}
+                    </option>
+                </ng-container>
+            </select>
+            <p></p>
+            <p>Danh mục phụ</p>
+            <select class="form-control" name="category" [(ngModel)]="product.CategoryID">
+                <option value="">Hãy chọn 1 loại</option>
+                <ng-container *ngFor="let category of categorylist">
+                    <option *ngIf="category.MainCategory==maincategory" value="{{category.CategoryID}}">
+                        {{category.Name}}</option>
+                </ng-container>
+            </select>
+            <div class="alert alert-danger" *ngIf="categoryrequire">Hãy chọn một danh mục</div>
+            <p></p>
+            <p>Giá: {{product.Price | number}} VNĐ</p>
+            <input type="number" #price [(ngModel)]="product.Price" class="form-control" 
+            (change)="OnPriceChange()" (click)="price.select()">
+            <p></p>
+            <p>Khuyến mãi: {{product.DiscountPercent | number}} %</p>
+            <input type="number" #discount [(ngModel)]="product.DiscountPercent" class="form-control" min="0" max="100"
+            (change)="OnDiscountChange()" (click)="discount.select()">
+            <p></p>
+            <button class="btn btn-dark" (click)="Save()">Lưu</button>
+            <button class="btn btn-dark" (click)="Cancel()" style="margin-left: 10px;">Hủy</button>
+        </div>
+    </div>
+</div>

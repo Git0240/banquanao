@@ -1,0 +1,89 @@
+
+
+<div class="container " style="max-width: 350px;width: device-width;">
+  <div class="row" style="margin-bottom: 10px;">
+    <div class="col">
+    <div>
+        <h2 style="text-align: center;">Đăng kí tài khoản</h2>
+    </div>
+
+    
+  <form  [formGroup]="classForm " #formDir="ngForm">
+    <div [hidden]="!!classForm.submitted">
+    <div class="cross-validation" [class.cross-validation-error]="!!classForm.errors?.identityRevealed
+    && (classForm.touched || classForm.dirty)">
+  
+      <div >
+        <label>Họ và tên</label>
+        <input #classname type="text" class="form-control" placeholder="Name" formControlName="fullname" required>
+        <div *ngIf="fullname.invalid && (fullname.dirty || fullname.touched)"
+                class="alert alert-danger">
+              <div *ngIf="!!fullname.errors.required">
+                Hãy nhập họ và tên.
+              </div>
+            </div>
+     </div>
+
+     <div >
+        <label>Email</label>
+        <input #classname type="email" class="form-control" placeholder="Email" formControlName="email" required>
+        <div *ngIf="email.invalid && (email.dirty || email.touched)"
+                class="alert alert-danger">
+              <div *ngIf="!!email.errors.required">
+                Hãy nhập email.
+              </div>
+              <div *ngIf="!!email.errors.email">
+                Email không hợp lệ.
+              </div>
+            </div>
+     </div>
+
+     <div >
+        <label>Mật khẩu</label>
+        <input #classname type="password" class="form-control" placeholder="Password" formControlName="passwork" required>
+        <div *ngIf="passwork.invalid && (passwork.dirty || passwork.touched)"
+                class="alert alert-danger">
+              <div *ngIf="!!passwork.errors.required">
+                Hãy nhập mật khẩu.
+              </div>
+              <div *ngIf="!!passwork.errors.minlength">
+                  Mật khẩu cần ít nhất 6 ký tự.</div>
+            </div>
+     </div>
+
+     <div >
+            <label>Xác nhận mật khẩu</label>
+            <input #classname type="password" class="form-control" placeholder="Confirm" formControlName="confirmpass" required>
+            <div *ngIf="confirmpass.invalid && (confirmpass.dirty || confirmpass.touched)"
+                    class="alert alert-danger">
+                  <div *ngIf="!!confirmpass.errors.required">
+                    Hãy xác nhận mật khẩu.
+                  </div>
+                  <!-- <div *ngIf="!!confirmpass.errors.identityRevealedValidator ">
+                      Passwords must match
+                    </div>  
+              </div>  -->
+         </div>   
+        
+      
+         <div *ngIf="classForm.errors?.identityRevealed && (confirmpass.touched || confirmpass.dirty)" class="cross-validation-error-message alert alert-danger">
+          Xác nhận mật khẩu không chính xác.
+      </div>
+    </div>   
+
+      
+    </div>
+  </div>
+  <div style="margin-top: 10px;">
+    <button class="btn btn-dark float-right" (click)="creatAccount(fullname.value, email.value, passwork.value)" title="Add" type="submit" [disabled]="classForm.invalid">Save </button>
+    <button type="button" class="btn btn-dark float-right" style="margin-right: 5px;"
+        [routerLink]="['/home']" routerLinkActive="active">Back</button>
+  </div>
+  </form>
+ 
+  
+  </div>
+</div>
+  </div>
+  
+  

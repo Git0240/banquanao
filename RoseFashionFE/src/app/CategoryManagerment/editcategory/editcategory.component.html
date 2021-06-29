@@ -1,0 +1,39 @@
+<div  class="container" style="max-width: 450px; width:device-width;">
+
+  <div>
+          <h2 style="text-align: center;color: black;; ">Sửa loại sản phẩm</h2>
+  </div>
+  <!-- <div *ngIf="showMessage" class="alert alert-success">
+    <strong>{{showMessage}}</strong>
+     CategoryID: string;
+    Name: string;
+    MainCategory: string;
+  </div> -->
+  <div>
+      <label>ID</label>
+    <input class="form-control" [(ngModel)]="category.CategoryID"  disabled>
+  </div>
+
+
+  <div>
+      <label>Loại chính</label>
+    <input class="form-control" [(ngModel)]="category.MainCategory" >
+    <div class="alert alert-danger" *ngIf="category.MainCategory == '' ">
+      <div >
+        It's required.
+      </div>
+</div>
+  </div>
+  <div>
+    <label>Loại phụ</label>
+  <input class="form-control" [(ngModel)]="category.Name" >
+  <div class="alert alert-danger" *ngIf="category.Name == '' ">
+    <div >
+      It's required.
+    </div>
+</div>
+</div>
+
+  <button  type="button" class="btn btn-dark float-right" (click)="save()" >Save</button>
+  <button type="button" class="btn btn-dark float-right"  routerLink="" style="margin-right: 5px;">Back</button>
+</div>
